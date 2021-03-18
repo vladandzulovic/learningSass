@@ -1,0 +1,29 @@
+
+$body-bg: $light-gray;
+$body-color: $black;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+    font-size: 10px;  /* 1rem */
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+.container{
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+}

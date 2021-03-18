@@ -1,0 +1,13 @@
+$header-bg: $blue;
+$header-color: $white;
+
+header{
+    
+    padding: 30px 0;
+    background-color: $header-bg;
+    
+}
+
+header a{
+    color:$header-color;
+}
