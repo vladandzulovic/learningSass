@@ -376,6 +376,11 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #5e0585;
+  font-weight: 700;
+}
+
 header {
   padding: 30px 0;
   background-color: #5e0585;
@@ -430,18 +435,21 @@ header .main-menu a:hover, header .main-menu a.active {
   margin-bottom: 3rem;
 }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Mar 18, 2021, 2:18:16 PM
-    Author     : frontend
-*/
 .about-section {
   padding: 30px 0;
   background-color: #fff;
+}
+
+.about-section h2 {
+  margin-bottom: 3rem;
+}
+
+.about-section article h3 {
+  margin-bottom: 2rem;
+}
+
+.about-section article p {
+  margin-bottom: 1.5rem;
 }
 
 /*
