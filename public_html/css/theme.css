@@ -7,6 +7,17 @@ and open the template in the editor.
     Created on : Mar 18, 2021, 1:54:53 PM
     Author     : frontend
 */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
