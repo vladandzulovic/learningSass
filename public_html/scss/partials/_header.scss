@@ -1,5 +1,7 @@
 $header-bg: $purple;
 $header-color: $white;
+$menu-link-hover-bg: $white;
+$menu-link-hover-color: $purple;
 
 header{
 
@@ -28,7 +30,15 @@ header{
             padding: 5px 10px;
             text-transform: uppercase;
             font-size: 2rem;
+            transition: 0.5s linear;
+            
+            &:hover, &.active{
+                color:$menu-link-hover-color;
+                background: $menu-link-hover-bg;
+            }
+            
         }
+        
     }
 
 }
