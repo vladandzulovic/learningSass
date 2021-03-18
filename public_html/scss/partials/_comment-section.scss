@@ -8,8 +8,7 @@ and open the template in the editor.
     Author     : frontend
 */
 
-
+$comment-bg: $white;
 .comment-section{
-    padding: 30px 0;
-    background-color: #fff;
+    @include sectionStyle($about-bg, 30px);
 }

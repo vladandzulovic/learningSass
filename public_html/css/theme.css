@@ -429,6 +429,7 @@ header .main-menu a:hover, header .main-menu a.active {
 
 .home-section {
   padding: 40px 0;
+  background-color: transparent;
 }
 
 .home-section h2 {
@@ -452,15 +453,11 @@ header .main-menu a:hover, header .main-menu a.active {
   margin-bottom: 1.5rem;
 }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Mar 18, 2021, 2:18:25 PM
-    Author     : frontend
-*/
+.service-section {
+  padding: 60px 0;
+  background-color: transparent;
+}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -484,6 +481,11 @@ and open the template in the editor.
     Created on : Mar 18, 2021, 2:18:48 PM
     Author     : frontend
 */
+.course-section {
+  padding: 50px 0;
+  background-color: transparent;
+}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates

@@ -3,7 +3,7 @@
 
 .home-section{
     
-    padding: 40px 0;
+    @include sectionStyle(transparent, 40px);
     
     h2{
         margin-bottom: 3rem;
