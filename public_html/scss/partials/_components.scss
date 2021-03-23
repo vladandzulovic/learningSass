@@ -25,6 +25,8 @@ $color-scheme: (
 );
 
 
+$table-border: $black;
+
 
 
 %btn{
@@ -56,12 +58,48 @@ $color-scheme: (
     .bg-#{$key}{
         background-color: $value;
     }
-    
+
     .text-#{$key}{
         color: $value;
     }
 
 }
+
+
+
+    table{
+        width: 100%;
+        border: 1px solid $table-border;
+        border-collapse: collapse;
+
+
+        td, th{
+            border: 1px solid $table-border;
+            padding: 5px;
+        }
+
+        caption{
+            text-align: left;
+            font-style: italic;
+            font-size: 1.6rem;
+        }
+
+        thead{
+            .comment-section &{
+                background-color: $orange;
+                th, td{
+                    color: colorYIQ($orange)
+                }
+            }
+
+            .course-section &{
+                background-color: $purple;
+                th, td{
+                    color: colorYIQ($purple)
+                }
+            }
+        }
+    }
 
 
 
