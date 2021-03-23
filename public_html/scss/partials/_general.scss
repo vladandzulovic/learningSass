@@ -3,6 +3,9 @@ $body-bg: $light-gray;
 $body-color: $black;
 $heading-color: $purple;
 
+$body-font: $lato;
+$heading-font: $chango;
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -20,6 +23,7 @@ body{
     font-size: 1.6rem;
     background-color: $body-bg;
     color: $body-color;
+    font-family: $body-font;
 }
 
 .container{
@@ -34,4 +38,5 @@ a{
 h1, h2, h3, h4, h5, h6{
     color: $heading-color;
     font-weight: 700;
+    font-family: $heading-font;
 }

@@ -11,6 +11,8 @@ and open the template in the editor.
 $contact-bg: $white;
 .contact-section{
     @include sectionStyle($contact-bg, 30px);
+    background-size: cover;
+    background-position: top center;
     
     .section-title{
         text-align: center;

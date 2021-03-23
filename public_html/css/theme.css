@@ -7,6 +7,13 @@ and open the template in the editor.
     Created on : Mar 18, 2021, 1:54:53 PM
     Author     : frontend
 */
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Lato&display=swap");
+@font-face {
+  font-family: 'Helvetica';
+  src: url(fonts/Helvetica/test);
+  font-weight: bold;
+}
+
 .btn-cool, .btn-hot, .btn-awesome, .btn-info, .btn-fancy, .btn-dark {
   display: inline-block;
   padding: 10px 20px;
@@ -549,6 +556,7 @@ body {
   font-size: 1.6rem;
   background-color: #eee;
   color: #000;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -564,6 +572,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   color: #5e0585;
   font-weight: 700;
+  font-family: "Chango", cursive;
 }
 
 header {
@@ -613,8 +622,11 @@ header .main-menu a:hover, header .main-menu a.active {
 }
 
 .home-section {
-  padding: 40px 0;
+  padding: 100px 0;
   background-color: transparent;
+  background-image: url(../img/home.png);
+  background-position: top center;
+  background-size: contain;
 }
 
 .home-section h2 {
@@ -711,6 +723,8 @@ and open the template in the editor.
 .contact-section {
   padding: 30px 0;
   background-color: #fff;
+  background-size: cover;
+  background-position: top center;
 }
 
 .contact-section .section-title {

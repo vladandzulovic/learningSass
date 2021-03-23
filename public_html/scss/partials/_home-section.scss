@@ -3,7 +3,10 @@
 
 .home-section{
     
-    @include sectionStyle(transparent, 40px);
+    @include sectionStyle(transparent, 100px);
+    background-image: url(../img/home.png);
+    background-position: top center;
+    background-size: contain;
     
     h2{
         margin-bottom: 3rem;
