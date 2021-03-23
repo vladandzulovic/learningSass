@@ -11,4 +11,32 @@ and open the template in the editor.
 $contact-bg: $white;
 .contact-section{
     @include sectionStyle($contact-bg, 30px);
+    
+    .section-title{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    
+    .contact-form{
+        width: 600px;
+        max-width: 100%;
+        margin: 0 auto;
+        .form-group{
+            margin-bottom: 2rem;
+        }
+        label{
+            display: block;
+            color:#000;
+            font-size: 2rem
+        }
+        .form-control{
+            display: block;
+            width: 100%;
+            border: 1px solid #000;
+            padding: 0 5px;
+            line-height: 3.8rem;
+            
+        }
+    }
 }

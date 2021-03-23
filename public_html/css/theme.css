@@ -713,6 +713,35 @@ and open the template in the editor.
   background-color: #fff;
 }
 
+.contact-section .section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-section .contact-form {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.contact-section .contact-form .form-group {
+  margin-bottom: 2rem;
+}
+
+.contact-section .contact-form label {
+  display: block;
+  color: #000;
+  font-size: 2rem;
+}
+
+.contact-section .contact-form .form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 0 5px;
+  line-height: 3.8rem;
+}
+
 footer {
   padding: 30px 0;
   background-color: #5e0585;
