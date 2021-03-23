@@ -7,17 +7,110 @@ and open the template in the editor.
     Created on : Mar 18, 2021, 1:54:53 PM
     Author     : frontend
 */
-.btn {
+.btn-cool, .btn-hot, .btn-awesome, .btn-info, .btn-fancy, .btn-dark {
   display: inline-block;
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: none;
   margin-bottom: 1rem;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
+  cursor: pointer;
+  transition: 0.2s linear;
 }
 
+.btn-cool {
+  background-color: #056df5;
+  color: #fff;
+}
+
+.btn-cool:hover {
+  background-color: #0457c3;
+}
+
+.btn-hot {
+  background-color: #f50505;
+  color: #fff;
+}
+
+.btn-hot:hover {
+  background-color: #c30404;
+}
+
+.btn-awesome {
+  background-color: #5e0585;
+  color: #fff;
+}
+
+.btn-awesome:hover {
+  background-color: #3b0354;
+}
+
+.btn-info {
+  background-color: yellow;
+  color: #000;
+}
+
+.btn-info:hover {
+  background-color: #cccc00;
+}
+
+.btn-fancy {
+  background-color: orange;
+  color: #000;
+}
+
+.btn-fancy:hover {
+  background-color: #cc8400;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: black;
+}
+
+/*
+.btn-cool{
+    @extend %btn;
+    background-color: $cool-bg;
+    color: colorYIQ($cool-bg);
+    &:hover{
+        background-color:darken($cool-bg, 10%) ;
+    }
+}
+
+
+.btn-hot{
+    @extend %btn;
+    background-color: $hot-bg;
+    color: colorYIQ($hot-bg);
+    &:hover{
+        background-color:darken($hot-bg, 10%) ;
+    }
+}
+
+.btn-awesome{
+    @extend %btn;
+    background-color: $awesome-bg;
+    color: colorYIQ($awesome-bg);
+    &:hover{
+        background-color:darken($awesome-bg, 10%) ;
+    }
+}
+
+.btn-info{
+    @extend %btn;
+    background-color: $info-bg;
+    color: colorYIQ($info-bg);
+    &:hover{
+        background-color:darken($info-bg, 10%) ;
+    }
+}*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
