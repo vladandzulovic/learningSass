@@ -11,4 +11,30 @@ and open the template in the editor.
 $comment-bg: $white;
 .comment-section{
     @include sectionStyle($about-bg, 30px);
+    
+    .section-title{
+        margin-bottom: 3rem;
+    }
+    
+    .comment-list{
+        padding-left: 0;
+        list-style: none;
+        li{
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            .comment-img{
+                flex: 0 0 90px;
+                width: 90px;
+            }
+            .comment-body{
+                flex: 0 0 calc(100% - 90px);
+                width: calc(100% - 90px);
+                padding-left: 20px;
+            }
+        }
+    }
+    
 }

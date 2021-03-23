@@ -29,6 +29,14 @@ and open the template in the editor.
   background-color: #0457c3;
 }
 
+.bg-cool {
+  background-color: #056df5;
+}
+
+.text-cool {
+  color: #056df5;
+}
+
 .btn-hot {
   background-color: #f50505;
   color: #fff;
@@ -36,6 +44,14 @@ and open the template in the editor.
 
 .btn-hot:hover {
   background-color: #c30404;
+}
+
+.bg-hot {
+  background-color: #f50505;
+}
+
+.text-hot {
+  color: #f50505;
 }
 
 .btn-awesome {
@@ -47,6 +63,14 @@ and open the template in the editor.
   background-color: #3b0354;
 }
 
+.bg-awesome {
+  background-color: #5e0585;
+}
+
+.text-awesome {
+  color: #5e0585;
+}
+
 .btn-info {
   background-color: yellow;
   color: #000;
@@ -54,6 +78,14 @@ and open the template in the editor.
 
 .btn-info:hover {
   background-color: #cccc00;
+}
+
+.bg-info {
+  background-color: yellow;
+}
+
+.text-info {
+  color: yellow;
 }
 
 .btn-fancy {
@@ -65,6 +97,14 @@ and open the template in the editor.
   background-color: #cc8400;
 }
 
+.bg-fancy {
+  background-color: orange;
+}
+
+.text-fancy {
+  color: orange;
+}
+
 .btn-dark {
   background-color: #000;
   color: #fff;
@@ -72,6 +112,14 @@ and open the template in the editor.
 
 .btn-dark:hover {
   background-color: black;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.text-dark {
+  color: #000;
 }
 
 /*
@@ -574,6 +622,34 @@ and open the template in the editor.
 .comment-section {
   padding: 30px 0;
   background-color: #fff;
+}
+
+.comment-section .section-title {
+  margin-bottom: 3rem;
+}
+
+.comment-section .comment-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.comment-section .comment-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.comment-section .comment-list li .comment-img {
+  flex: 0 0 90px;
+  width: 90px;
+}
+
+.comment-section .comment-list li .comment-body {
+  flex: 0 0 calc(100% - 90px);
+  width: calc(100% - 90px);
+  padding-left: 20px;
 }
 
 /*

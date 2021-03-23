@@ -15,13 +15,13 @@
 
 
 
-$buttons: (
-    'cool': $blue,
-    'hot': $red,
-    'awesome': $purple,
-    'info': $yellow,
-    'fancy': $orange,
-    'dark': $black
+$color-scheme: (
+'cool': $blue,
+'hot': $red,
+'awesome': $purple,
+'info': $yellow,
+'fancy': $orange,
+'dark': $black
 );
 
 
@@ -40,17 +40,27 @@ $buttons: (
 
 
 
-    
-@each $key, $value in $buttons {
-    
+
+@each $key, $value in $color-scheme {
+
     .btn-#{$key}{
         @extend %btn;
         background-color: $value;
         color: colorYIQ($value);
         &:hover{
-        background-color:darken($value, 10%) ;
-    }
+            background-color:darken($value, 10%) ;
+        }
     }  
+
+
+    .bg-#{$key}{
+        background-color: $value;
+    }
+    
+    .text-#{$key}{
+        color: $value;
+    }
+
 }
 
 
