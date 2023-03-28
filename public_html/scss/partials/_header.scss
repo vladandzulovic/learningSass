@@ -1,0 +1,51 @@
+header{
+    padding: 15px 0;
+    background-color: purple;
+
+    @media(min-width:992px){
+        padding: 30px 0;
+    }
+
+    nav{
+        @media(min-width:992px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+        .branding{
+            text-align: center;
+            margin-bottom: 20px;
+            @media(min-width:992px){
+                margin-bottom: 0;
+            }
+            
+            a{
+                color:#fff;
+            }
+        }
+
+
+        ul{
+            list-style: none;
+            padding-left: 0;
+            @media(min-width:992px){
+                display: flex;
+            }
+            a{
+                display: block;
+                color:#fff;
+                text-align: center;
+                text-transform: uppercase;
+                border-bottom: 1px solid #fff;
+                font-size: 1.8rem;
+                line-height: 3rem;
+                font-weight: 700;
+                @media(min-width:992px){
+                    padding: 0 1rem;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
