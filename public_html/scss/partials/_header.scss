@@ -1,6 +1,6 @@
 header{
     padding: 15px 0;
-    background-color: purple;
+    background-color: $header-bg;
 
     @media(min-width:992px){
         padding: 30px 0;
@@ -20,7 +20,7 @@ header{
             }
             
             a{
-                color:#fff;
+                color:$white;
             }
         }
 
@@ -33,13 +33,18 @@ header{
             }
             a{
                 display: block;
-                color:#fff;
+                color:$white;
                 text-align: center;
                 text-transform: uppercase;
                 border-bottom: 1px solid #fff;
                 font-size: 1.8rem;
                 line-height: 3rem;
                 font-weight: 700;
+                &:hover,
+                &.active{
+                    color:$header-menu-hover-color;
+                }
+                
                 @media(min-width:992px){
                     padding: 0 1rem;
                     border-bottom: none;

@@ -1,5 +1,5 @@
 footer{
-    background-color: purple;
+    background-color: $footer-bg;
     padding: 15px 0;
     
     @media(min-width:992px){
@@ -24,7 +24,7 @@ footer{
             }
             a{
                 display: block;
-                color:#fff;
+                color:$white;
                 line-height: 2rem;
                 text-align: center;
                 @media(min-width:992px){
@@ -34,7 +34,7 @@ footer{
         }
         .copyright{
             text-align: center;
-            color:#fff;
+            color:$white;
         }
     }
 }
