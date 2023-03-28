@@ -476,13 +476,54 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Created on : Mar 28, 2023, 1:58:08 PM
     Author     : frontend
 */
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Mar 28, 2023, 1:58:16 PM
-    Author     : frontend
-*/
+footer {
+  background-color: purple;
+  padding: 15px 0;
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+footer nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  footer nav ul {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+footer nav ul a {
+  display: block;
+  color: #fff;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  footer nav ul a {
+    padding: 0 5px;
+  }
+}
+
+footer nav .copyright {
+  text-align: center;
+  color: #fff;
+}
 
 /*# sourceMappingURL=theme.css.map */
