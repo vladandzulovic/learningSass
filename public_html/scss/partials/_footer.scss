@@ -1,9 +1,9 @@
 footer{
     background-color: $footer-bg;
     padding: 15px 0;
-    
+    @include styleSection($footer-bg, 15px 0);
     @media(min-width:992px){
-        padding: 30px 0;
+        @include styleSection($footer-bg, 30px 0)
     }
     
     

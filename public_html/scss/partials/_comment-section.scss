@@ -1,6 +1,4 @@
 .comment-section{
-    
-    padding: 30px 0;
-    background-color:transparent;
+ @include styleSection(transparent, 30px 0)
     
 }

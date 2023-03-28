@@ -1,0 +1,13 @@
+@mixin styleSection($bg, $padding){
+    padding: $padding;
+    background-color: $bg;
+}
+
+@mixin borderRadius($tl, $tr, $br, $bl){
+    
+    @if($rounded){
+        border-radius: $tl $tr $br $bl;
+    }@else{
+        border-radius: 0;
+    }
+}

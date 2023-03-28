@@ -1,9 +1,14 @@
 
 
 @import "partials/_variable.scss";
+@import "partials/_functions.scss";
+
 
 @import "partials/_normalize.scss";
 @import "partials/_global.scss";
+
+
+@import "partials/_components.scss";
 
 @import "partials/_header.scss";
 @import "partials/_home-section.scss";

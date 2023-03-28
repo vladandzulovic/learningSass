@@ -2,7 +2,6 @@
 
 .service-section{
     
-    padding: 30px 0;
-    background-color: $section-bg;
+    @include styleSection($section-bg, 30px 0);
     
 }
