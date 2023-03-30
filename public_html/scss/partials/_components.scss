@@ -1,22 +1,89 @@
+/*
 
+red($color) vraca crvenu komponentu boje
+green($color) vraca zelenu komponentu od boje
+blue($color) vraca plavu komponentu od boje
+darken($color, $amount) 
+lighten($color, $amount)
+rgba($color, opacity)
+
+
+*/
 
 .btn{
     display: inline-block;
     padding: 10px 20px;
-    border: 1px solid $btn-border;
     @include borderRadius(10px, 0, 10px, 0);
+
+
+
 }
+
+
+
+@each $key, $value in $color-palete{
+    .btn-#{$key}{
+        @extend .btn;
+        background-color: $value;
+        color:colorYIQ($value);
+        border: 1px solid $value;
+        &:hover{
+            background-color: darken($value, 20%);
+            border-color: darken($value, 20%);
+            color: colorYIQ(darken($value, 20%))
+        }
+    }
+    
+    .bg-#{$key}{
+        background-color: $value;
+    }
+    
+    .text-#{$key}{
+        color:$value;
+    }
+}
+
+
+@each $value in $display-palete{
+    .d-#{$value}{
+        display: $value;
+    }
+}
+
+
+
+/*
 
 .btn-dark{
     @extend .btn;
     background-color: $btn-dark;
     color:#fff;
-    border-color: $btn-dark;
+    border: 1px solid $btn-dark;
+    &:hover{
+       background-color: darken($btn-dark, 20%);
+       background-color: darken($btn-dark, 20%);
+    }
 }
 
 .btn-warning{
     @extend .btn;
     background-color: $btn-warning;
     color:#fff;
-    border-color: $btn-warning;
+    border: 1px solid $btn-warning;
+    &:hover{
+       background-color: darken($btn-warning, 20%);
+       border-color: darken($btn-warning, 20%);
+    }
 }
+
+.btn-info{
+    @extend .btn;
+    background-color: $btn-info;
+    color:#000;
+    border:1px solid $btn-info;
+    &:hover{
+       background-color: darken($btn-info, 20%);
+       border-color: darken($btn-info, 20%);
+    }
+}
+*/

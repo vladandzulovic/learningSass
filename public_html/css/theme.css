@@ -367,25 +367,158 @@ a {
   padding: 0 15px;
 }
 
-.btn, .btn-dark, .btn-warning {
+/*
+
+red($color) vraca crvenu komponentu boje
+green($color) vraca zelenu komponentu od boje
+blue($color) vraca plavu komponentu od boje
+darken($color, $amount) 
+lighten($color, $amount)
+rgba($color, opacity)
+
+
+*/
+.btn, .btn-dark, .btn-warning, .btn-info, .btn-fancy {
   display: inline-block;
   padding: 10px 20px;
-  border: 1px solid #000;
   border-radius: 0;
 }
 
 .btn-dark {
   background-color: #000;
   color: #fff;
-  border-color: #000;
+  border: 1px solid #000;
+}
+
+.btn-dark:hover {
+  background-color: black;
+  border-color: black;
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.text-dark {
+  color: #000;
 }
 
 .btn-warning {
   background-color: #f5a00c;
-  color: #fff;
-  border-color: #f5a00c;
+  color: #000;
+  border: 1px solid #f5a00c;
 }
 
+.btn-warning:hover {
+  background-color: #956106;
+  border-color: #956106;
+  color: #fff;
+}
+
+.bg-warning {
+  background-color: #f5a00c;
+}
+
+.text-warning {
+  color: #f5a00c;
+}
+
+.btn-info {
+  background-color: yellow;
+  color: #000;
+  border: 1px solid yellow;
+}
+
+.btn-info:hover {
+  background-color: #999900;
+  border-color: #999900;
+  color: #000;
+}
+
+.bg-info {
+  background-color: yellow;
+}
+
+.text-info {
+  color: yellow;
+}
+
+.btn-fancy {
+  background-color: #5608a8;
+  color: #fff;
+  border: 1px solid #5608a8;
+}
+
+.btn-fancy:hover {
+  background-color: #240347;
+  border-color: #240347;
+  color: #fff;
+}
+
+.bg-fancy {
+  background-color: #5608a8;
+}
+
+.text-fancy {
+  color: #5608a8;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-none {
+  display: none;
+}
+
+/*
+
+.btn-dark{
+    @extend .btn;
+    background-color: $btn-dark;
+    color:#fff;
+    border: 1px solid $btn-dark;
+    &:hover{
+       background-color: darken($btn-dark, 20%);
+       background-color: darken($btn-dark, 20%);
+    }
+}
+
+.btn-warning{
+    @extend .btn;
+    background-color: $btn-warning;
+    color:#fff;
+    border: 1px solid $btn-warning;
+    &:hover{
+       background-color: darken($btn-warning, 20%);
+       border-color: darken($btn-warning, 20%);
+    }
+}
+
+.btn-info{
+    @extend .btn;
+    background-color: $btn-info;
+    color:#000;
+    border:1px solid $btn-info;
+    &:hover{
+       background-color: darken($btn-info, 20%);
+       border-color: darken($btn-info, 20%);
+    }
+}
+*/
 header {
   padding: 15px 0;
   background-color: #f5a00c;
