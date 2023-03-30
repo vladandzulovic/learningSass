@@ -381,7 +381,8 @@ rgba($color, opacity)
 .btn, .btn-dark, .btn-warning, .btn-info, .btn-fancy, .btn-white {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 0;
+  cursor: pointer;
+  border-radius: 10px 0 10px 0;
 }
 
 .btn-dark {
@@ -619,7 +620,7 @@ header nav ul a:hover, header nav ul a.active {
 }
 
 .home-section {
-  padding: 100px 0;
+  padding: 200px 0;
   background-color: #fff;
   background-image: url("./../img/home.png");
   background-size: contain;
@@ -702,6 +703,40 @@ header nav ul a:hover, header nav ul a.active {
 .contact-section {
   padding: 30px 0;
   background-color: transparent;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-section .contact-form {
+  max-width: 500px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.contact-section .contact-form .form-group:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.contact-section .contact-form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-section .contact-form .form-group .form-control {
+  display: block;
+  width: 100%;
+  line-height: 4rem;
+  padding: 0 5px;
+  border: 1px solid #444;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.contact-section .contact-form .form-group .form-control:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 footer {

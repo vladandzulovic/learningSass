@@ -20,7 +20,7 @@ $section-bg: $white;
 $table-border:$black;
 
 $header-menu-hover-color:$purple;
-
+$input-border-color:$dark-gray;
 
 $color-palete:(
     'dark':$black,
@@ -36,5 +36,5 @@ block,inline,flex,inline-block,none
 );
 
 
-$rounded: false;
+$rounded: true;
 

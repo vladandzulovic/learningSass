@@ -1,6 +1,6 @@
 .home-section{
     
-    @include styleSection($section-bg, 100px 0)
+    @include styleSection($section-bg, 200px 0)
     background-image: url('./../img/home.png');
     background-size: contain;
     background-position: top center;
