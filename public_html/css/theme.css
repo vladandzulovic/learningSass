@@ -378,7 +378,7 @@ rgba($color, opacity)
 
 
 */
-.btn, .btn-dark, .btn-warning, .btn-info, .btn-fancy {
+.btn, .btn-dark, .btn-warning, .btn-info, .btn-fancy, .btn-white {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 0;
@@ -464,6 +464,26 @@ rgba($color, opacity)
   color: #5608a8;
 }
 
+.btn-white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+.btn-white:hover {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  color: #000;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-white {
+  color: #fff;
+}
+
 .d-block {
   display: block;
 }
@@ -482,6 +502,17 @@ rgba($color, opacity)
 
 .d-none {
   display: none;
+}
+
+table {
+  border: 1px solid #000;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 1px solid #000;
+  padding: 5px;
 }
 
 /*
@@ -629,6 +660,38 @@ header nav ul a:hover, header nav ul a.active {
 .comment-section {
   padding: 30px 0;
   background-color: transparent;
+}
+
+.comment-section h2 {
+  margin-bottom: 20px;
+}
+
+.comment-section .comment-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.comment-section .comment-list li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.comment-section .comment-list li:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.comment-section .comment-list li .comment-img {
+  flex: 0 0 90px;
+  border: 1px solid #fff;
+}
+
+.comment-section .comment-list li .comment-img img {
+  display: block;
+}
+
+.comment-section .comment-list li .comment-body {
+  flex: 1;
+  padding-left: 15px;
 }
 
 .courses-section {

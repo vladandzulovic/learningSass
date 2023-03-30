@@ -17,6 +17,7 @@ $footer-bg: $purple;
 $body-color:$black;
 $body-bg:$gray-light;
 $section-bg: $white;
+$table-border:$black;
 
 $header-menu-hover-color:$purple;
 
@@ -25,7 +26,8 @@ $color-palete:(
     'dark':$black,
     'warning':$orange,
     'info':$yellow,
-    'fancy':$purple
+    'fancy':$purple,
+    'white':$white
 );
 
 

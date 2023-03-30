@@ -51,6 +51,17 @@ rgba($color, opacity)
 }
 
 
+table{
+    border:1px solid $table-border;
+    width: 100%;
+    border-collapse: collapse;
+    td,th{
+       border:1px solid $table-border; 
+       padding: 5px;
+    }
+}
+
+
 
 /*
 
