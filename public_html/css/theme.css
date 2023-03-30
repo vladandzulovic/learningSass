@@ -588,8 +588,16 @@ header nav ul a:hover, header nav ul a.active {
 }
 
 .home-section {
-  padding: 30px 0;
+  padding: 100px 0;
   background-color: #fff;
+  background-image: url("./../img/home.png");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.home-section h2 {
+  margin-bottom: 20px;
 }
 
 .about-section {
